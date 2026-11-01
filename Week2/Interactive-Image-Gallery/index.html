@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Beautiful Image Gallery</h1>
+        <p>Explore the beauty of nature</p>
+    </header>
+
+    <div class="gallery">
+        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=600"
+             alt="Nature" onclick="openLightbox(this)">
+
+        <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=600"
+             alt="Mountain" onclick="openLightbox(this)">
+
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=600"
+             alt="Beach" onclick="openLightbox(this)">
+
+        <img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=600"
+             alt="Flowers" onclick="openLightbox(this)">
+
+        <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=600"
+             alt="Snow Mountains" onclick="openLightbox(this)">
+
+        <img src="https://images.unsplash.com/photo-1448375240586-882707db888b?w=600"
+             alt="Forest" onclick="openLightbox(this)">
+
+        <img src="https://images.unsplash.com/photo-1504893524553-b855bce32c67?w=600"
+             alt="River" onclick="openLightbox(this)">
+
+        <img src="https://images.unsplash.com/photo-1472396961693-142e6e269027?w=600"
+             alt="Wildlife" onclick="openLightbox(this)">
+    </div>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox">
+        <span class="close" onclick="closeLightbox()">&times;</span>
+        <img id="lightboxImage" src="" alt="Enlarged image">
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

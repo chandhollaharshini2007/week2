@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock and Countdown Timer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Digital Clock</h1>
+
+        <div id="clock">
+            00:00:00
+        </div>
+
+        <p id="date"></p>
+
+        <hr>
+
+        <h2>Countdown Timer</h2>
+
+        <label for="targetDate">Select Target Date and Time:</label>
+
+        <input type="datetime-local" id="targetDate">
+
+        <div id="countdown">
+            00 Days : 00 Hours : 00 Minutes : 00 Seconds
+        </div>
+
+        <div class="buttons">
+            <button onclick="startCountdown()">Start</button>
+            <button onclick="pauseCountdown()">Pause</button>
+            <button onclick="resetCountdown()">Reset</button>
+        </div>
+
+        <p id="message"></p>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
